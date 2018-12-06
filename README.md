@@ -10,6 +10,8 @@ Build/Runs your GO application, watches files, and rebuilds/reruns app on file c
 
 ## Installation
 
+for Crystal installation, visit [this link](https://gist.github.com/codenoid/c9c172d6ab99c8de0130d940a3d9fe83) or [Official Site](https://crystal-lang.org/docs/installation/)
+
 To install in your project, from the root directory of your project, run:
 ```bash
 curl -fsSLo- https://raw.githubusercontent.com/codenoid/GO-Sentry/master/install.cr | crystal eval
