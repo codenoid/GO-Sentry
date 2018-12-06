@@ -66,7 +66,7 @@ Usage: ./sentry [options]
 ./sentry -b "go build main.go"
 ```
 
-The default build command is `crystal build ./src/[app_name].cr`. The release flag is omitted by default for faster compilation time while you are developing.
+The default build command is `go build main.go`. The release flag is omitted by default for faster compilation time while you are developing.
 
 #### Override Default Run Command
 
@@ -79,7 +79,7 @@ The default run command is `./[app_name]`.
 #### Override Default Files to Watch
 
 ```bash
-./sentry -w "./*.go" -w "./models/*.cr"
+./sentry -w "./*.go" -w "./models/*.go"
 ```
 
 The default files being watched are `["./*.go"]`.
