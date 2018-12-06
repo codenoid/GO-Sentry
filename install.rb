@@ -2,7 +2,7 @@ require "net/http"
 require "uri"
 require 'fileutils'
 
-sentry_uri = URI.parse("https://raw.githubusercontent.com/samueleaton/sentry/master/src/sentry.cr")
+sentry_uri = URI.parse("https://raw.githubusercontent.com/codenoid/GO-Sentry/master/src/sentry.cr")
 req = Net::HTTP.new(sentry_uri.host, sentry_uri.port)
 req.use_ssl = (sentry_uri.scheme == "https")
 response = req.request(Net::HTTP::Get.new(sentry_uri.request_uri))
@@ -15,7 +15,7 @@ end
 
 sentry_code = response.body
 
-sentry_cli_uri = URI.parse("https://raw.githubusercontent.com/samueleaton/sentry/master/src/sentry_cli.cr")
+sentry_cli_uri = URI.parse("https://raw.githubusercontent.com/codenoid/GO-Sentry/master/src/sentry_cli.cr")
 req = Net::HTTP.new(sentry_cli_uri.host, sentry_cli_uri.port)
 req.use_ssl = (sentry_cli_uri.scheme == "https")
 response = req.request(Net::HTTP::Get.new(sentry_cli_uri.request_uri))
