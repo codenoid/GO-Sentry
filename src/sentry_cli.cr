@@ -73,10 +73,10 @@ if Sentry::Config.name
     build_args: config.build_args,
     run_args: config.run_args,
     should_build: config.should_build?,
-    files: config.watch,
+    files: config.watch.empty? ? ["./*.go"] : config.watch,
     colorize: config.colorize?
   )
-
+ 
   process_runner.run
 else
   puts "🤖  Sentry error: 'name' not given"
