@@ -2,10 +2,7 @@ require "option_parser"
 require "colorize"
 require "./sentry"
 
-begin
-  Sentry::Config.name = File.basename(__DIR__)
-rescue e
-end
+Sentry::Config.name = File.basename(Dir.current)
 
 cli_config = Sentry::Config.new
 
