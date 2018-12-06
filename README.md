@@ -17,16 +17,6 @@ To install in your project, from the root directory of your project, run:
 curl -fsSLo- https://raw.githubusercontent.com/codenoid/GO-Sentry/master/install.cr | crystal eval
 ```
 
-If using Crystal version `0.24.2` try the following:
-```bash
-curl -fsSLo- https://raw.githubusercontent.com/codenoid/GO-Sentry/crystal-v0.24.2/install.cr | crystal eval
-```
-
-If using Crystal version `0.23.1` or lower try the following:
-```bash
-curl -fsSLo- https://raw.githubusercontent.com/codenoid/GO-Sentry/crystal-v0.23.1/install.cr | crystal eval
-```
-
 **Troubleshooting the install:** This ruby install script is just a convenience. If it does not work, simply: (1) place the files located in the `src` dir into a your project in a `dev/` dir, and (2) compile sentry by doing `crystal build --release dev/sentry_cli.cr -o ./sentry`.
 
 ## Usage
