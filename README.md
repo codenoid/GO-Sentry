@@ -81,8 +81,13 @@ The default run command is `./[app_name]`.
 ```bash
 ./sentry -w "./*.go" -w "./models/*.go"
 ```
-
 The default files being watched are `["./*.go"]`.
+
+#### Override Custom Watch, Build & Run Command
+
+```bash
+./sentry -w "./*.go" -w "./models/*.go" -b "go build main.go" -r "./main"
+```
 
 By specifying files to watch, the default will be omitted. So if you want to watch all of the file in your `src` directory, you will need to specify that like in the above example.
 
