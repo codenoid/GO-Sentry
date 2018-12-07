@@ -6,6 +6,8 @@
 
 # Sentry (GO Version) 🤖
 
+![GitHub All Releases](https://img.shields.io/github/downloads/codenoid/GO-Sentry/total.svg)
+
 Build/Runs your GO application, watches files, and rebuilds/reruns app on file changes, for Crystal version, visit [samueleaton/sentry](https://github.com/samueleaton/sentry)
 
 ## Installation
